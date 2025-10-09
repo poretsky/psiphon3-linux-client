@@ -11,4 +11,4 @@ Package: psi-client
 Architecture: amd64
 Depends: adduser
 Description: Fast Psiphon vpn with tunneling
- Pisiphon is a fast and efficient VPN tunnel
+ Psiphon is a fast and efficient VPN tunnel

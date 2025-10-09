@@ -1,7 +1,7 @@
 {
     "uuid": "psi-client@Human",
     "name": "Psiphon",
-    "description": "Connect to Pisiphon network",
+    "description": "Connect to Psiphon network",
     "max-instances": "1",
     "author": "Human"
 }

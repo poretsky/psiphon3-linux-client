@@ -26,7 +26,7 @@
     "type": "switch",
     "default": false,
     "description": "Use any listen interface",
-    "tooltip": "All interfaces con connect to pisiphon tunnel."
+    "tooltip": "All interfaces can connect to psiphon tunnel."
   },
 
   "use-split-tunnel": {

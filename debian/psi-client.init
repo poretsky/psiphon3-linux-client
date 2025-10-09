@@ -6,7 +6,7 @@
 # Required-Stop:     $remote_fs $syslog $time $network
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Pisiphon Core Client
+# Short-Description: Psiphon Core Client
 # Description:       Open free Internet VPN
 ### END INIT INFO
 #
