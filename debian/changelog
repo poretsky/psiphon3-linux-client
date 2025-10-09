@@ -1,3 +1,10 @@
+psi-client (0.3) unstable; urgency=medium
+
+  * Core binary update up to revision 37180721.
+  * Typo fixes in comments.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Thu, 09 Oct 2025 14:30:13 +0300
+
 psi-client (0.2) unstable; urgency=medium
 
   * psi-client
