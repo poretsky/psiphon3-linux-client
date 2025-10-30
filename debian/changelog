@@ -1,3 +1,9 @@
+psi-client (0.4) unstable; urgency=medium
+
+  * Psiphon client core binary update up to revision aa4d266a.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Thu, 30 Oct 2025 14:28:28 +0300
+
 psi-client (0.3) unstable; urgency=medium
 
   * Core binary update up to revision 37180721.
