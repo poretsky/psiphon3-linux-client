@@ -23,9 +23,9 @@ DESC="Psiphon Core Client"
 # Set default values
 PSI_PIDFILE=/var/run/psi-client/psi-client.pid
 PSI_CONF_FILE=/etc/psi-client.conf
-PSI_LOG_FILE=/var/log/psi-client.json
+PSI_LOG_FILE=/var/log/psi-client.log
 PSI_DATA=/var/cache/psi-client/
-PSI_OPTS="-config $PSI_CONF_FILE  -notices $PSI_LOG_FILE -dataRootDirectory $PSI_DATA"
+PSI_OPTS="-config $PSI_CONF_FILE -formatNotices -notices $PSI_LOG_FILE -dataRootDirectory $PSI_DATA"
 RUNAS=$NAME
 
 # Include custom values if available
