@@ -1,0 +1,16 @@
+[Unit]
+Description=Psiphon Core Client
+After=network.target
+
+[Service]
+Environment="NAME=psi-client"
+Environment="LOGFILE=/var/log/psi-client.log"
+ExecStartPre=/usr/bin/truncate -s 0 ${LOGFILE}
+ExecStartPre=/bin/chown ${NAME} ${LOGFILE}
+ExecStartPre=/bin/chmod 0644 ${LOGFILE}
+ExecStart=/usr/sbin/psi-client-core -config /etc/${NAME}.conf -formatNotices -notices ${LOGFILE} -dataRootDirectory /var/cache/${NAME}
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

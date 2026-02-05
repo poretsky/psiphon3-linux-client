@@ -34,8 +34,9 @@ build:
 	cp -rf service-controller/psi-client-service   debian/psi-client/usr/bin/psi-client-service
 	mkdir -p  debian/psi-client/usr/share/cinnamon/applets/
 	cp -rf cinnamon.applet/psi-client@Human/ debian/psi-client/usr/share/cinnamon/applets/
-	dh_installdebconf	
-	dh_installinit -n
+	dh_installdebconf
+	dh_systemd_enable
+	dh_installinit
 	dh_link
 	dh_compress
 	dh_installdeb
