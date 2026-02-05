@@ -59,7 +59,7 @@ start() {
 
 	echo "{\"$NAME\":\"$DAEMON_OPTS\"}" >$PSI_LOG_FILE
 	chown "$RUNAS" "$PSI_LOG_FILE" 2>/dev/null
-	chmod 755 "$PSI_LOG_FILE" 2>/dev/null
+	chmod 0644 "$PSI_LOG_FILE" 2>/dev/null
 
 	if start-stop-daemon --start --background --pidfile $PSI_PIDFILE --make-pidfile \
 		--exec $DAEMON -- $DAEMON_OPTS; then
