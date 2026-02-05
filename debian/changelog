@@ -1,3 +1,9 @@
+psi-client (0.7) unstable; urgency=medium
+
+  * Utilized systemd service facility.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Thu, 05 Feb 2026 15:34:05 +0300
+
 psi-client (0.6) unstable; urgency=medium
 
   * Psiphon client binary update up to a3384a55.
