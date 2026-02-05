@@ -57,7 +57,7 @@ start() {
 
 	log_daemon_msg "Starting $DESC: " "$NAME"
 
-	echo "{\"$NAME\":\"$DAEMON_OPTS\"}" >$PSI_LOG_FILE
+	truncate -s 0 $PSI_LOG_FILE
 	chown "$RUNAS" "$PSI_LOG_FILE" 2>/dev/null
 	chmod 0644 "$PSI_LOG_FILE" 2>/dev/null
 
