@@ -8,27 +8,5 @@
 #export DH_VERBOSE=1
 export DEB_BUILD_OPTIONS=nostrip
 
-package = psi-client
-
 %:
 	dh $@ --with systemd
-
-override_dh_auto_install-arch:
-	mkdir -p debian/$(package)/usr/sbin
-	cp -p psiphon-tunnel-core-binaries/linux/psiphon-tunnel-core-x86_64 debian/$(package)/usr/sbin/psi-client-core
-	mkdir -p debian/$(package)/etc
-	cp -p psi-client.conf debian/$(package)/etc
-	mkdir -p debian/$(package)/var/cache/$(package)
-	mkdir -p debian/$(package)/usr/share/dbus-1/system-services
-	cp -p service-controller/data/cu.human.psiclient.controller.service debian/$(package)/usr/share/dbus-1/system-services
-	mkdir -p debian/$(package)/usr/share/polkit-1/actions
-	cp -p service-controller/data/cu.human.psiclient.controller.policy debian/$(package)/usr/share/polkit-1/actions
-	mkdir -p debian/$(package)/etc/dbus-1/system.d
-	cp -p service-controller/data/cu.human.psiclient.controller.conf debian/$(package)/etc/dbus-1/system.d
-	mkdir -p debian/$(package)/usr/lib/$(package)
-	cp -rp service-controller/libpsiclient debian/$(package)/usr/lib/$(package)
-	mkdir -p  debian/$(package)/usr/bin
-	cp -p service-controller/psi-client debian/$(package)/usr/bin
-	cp -p service-controller/psi-client-service debian/$(package)/usr/bin
-	mkdir -p  debian/$(package)/usr/share/cinnamon/applets
-	cp -rp cinnamon.applet/psi-client@Human debian/$(package)/usr/share/cinnamon/applets

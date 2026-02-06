@@ -1,0 +1,12 @@
+#!/usr/bin/dh-exec
+psiphon-tunnel-core-binaries/linux/psiphon-tunnel-core-x86_64 => /usr/sbin/psi-client-core
+
+psi-client.conf etc
+service-controller/data/cu.human.psiclient.controller.service usr/share/dbus-1/system-services
+service-controller/data/cu.human.psiclient.controller.policy usr/share/polkit-1/actions
+service-controller/data/cu.human.psiclient.controller.conf etc/dbus-1/system.d
+service-controller/psi-client usr/bin
+service-controller/psi-client-service usr/bin
+
+service-controller/libpsiclient usr/lib/psi-client
+cinnamon.applet/psi-client@Human usr/share/cinnamon/applets
