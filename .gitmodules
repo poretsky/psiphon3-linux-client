@@ -1,3 +1,6 @@
 [submodule "psiphon-tunnel-core"]
 	path = psiphon-tunnel-core
 	url = https://github.com/Psiphon-Labs/psiphon-tunnel-core.git
+[submodule "psiphon-tunnel-core-binaries"]
+	path = psiphon-tunnel-core-binaries
+	url = https://github.com/Psiphon-Labs/psiphon-tunnel-core-binaries.git

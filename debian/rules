@@ -17,7 +17,7 @@ build:
 	dh_installdocs
 	dh_install
 	mkdir -p debian/psi-client/usr/sbin/
-	cp psi-client-core debian/psi-client/usr/sbin/psi-client-core
+	cp psiphon-tunnel-core-binaries/linux/psiphon-tunnel-core-x86_64 debian/psi-client/usr/sbin/psi-client-core
 	mkdir -p debian/psi-client/etc/
 	cp psi-client.conf debian/psi-client/etc/psi-client.conf
 	mkdir -p debian/psi-client/var/cache/psi-client/ca.psiphon.PsiphonTunnel.tunnel-core/
