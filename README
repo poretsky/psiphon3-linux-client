@@ -21,7 +21,7 @@ DISPLAY=:0 cinnamon --replace
 
 Install on Linux
 cd psi-client****
-sudo dpkg-buildpackage -us -uc -tc
+dpkg-buildpackage -us -uc -tc -b
 sudo dpkg -i ../psi-client*.deb 
 
 Gets you where you want to go...
