@@ -1,3 +1,10 @@
+psi-client (0.8) unstable; urgency=medium
+
+  * Official binary source.
+  * Utilized debhelper power.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Fri, 06 Feb 2026 16:10:16 +0300
+
 psi-client (0.7) unstable; urgency=medium
 
   * Utilized systemd service facility.
