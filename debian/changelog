@@ -1,3 +1,9 @@
+psi-client (0.10) unstable; urgency=medium
+
+  * Return to the stable Psiphon version 2.0.35 and binary c86a1497.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Mon, 09 Feb 2026 10:18:39 +0300
+
 psi-client (0.9) unstable; urgency=medium
 
   * Psiphon client binary update up to a496c283.
