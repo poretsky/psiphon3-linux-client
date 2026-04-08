@@ -1,3 +1,9 @@
+psi-client (0.11) unstable; urgency=medium
+
+  * New upstream version 2.0.37 (binary 9afb12bc).
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Wed, 08 Apr 2026 14:14:15 +0300
+
 psi-client (0.10) unstable; urgency=medium
 
   * Return to the stable Psiphon version 2.0.35 and binary c86a1497.
