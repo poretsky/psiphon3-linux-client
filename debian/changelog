@@ -1,3 +1,9 @@
+psi-client (0.13) unstable; urgency=medium
+
+  * New upstream version 2.0.39 (binary cd31fecf7b).
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Tue, 23 Jun 2026 20:37:39 +0300
+
 psi-client (0.12) unstable; urgency=medium
 
   * New upstream version 2.0.38 (binary 3dcda081).
